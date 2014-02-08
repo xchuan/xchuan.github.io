@@ -10,7 +10,9 @@
 			//主要
 			var gaptop = (($('html').outerHeight(true)-$('body').height())<options.offsetMax && ($('html').outerHeight(true)-$('body').height())>options.offsetMin)?$('html').outerHeight(true)-$('body').height():options.offset;
 			if ($('html').data('gap')===undefined)$('html').data('gap',gaptop);
-			if(document.addEventListener)$('body').css('height',$('html').outerHeight(true)-gaptop);
+			if(document.addEventListener){$('body').css('height',$('html').outerHeight(true)-gaptop);}
+			var diff = $('html').height()-$(window).height();
+			if (document.all && document.querySelector && !document.addEventListener) {$('body').css({'height':$('html').outerHeight(true)-gaptop-diff,'min-height':$('html').outerHeight(true)-gaptop-diff});$('#ie8_redraw').html($('html').outerHeight(true));}
 			$('.ftfix').css('margin-top',-$('.ftfix').outerHeight())
 		}
 		
