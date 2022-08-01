@@ -49,6 +49,15 @@
           var goBaidu = function(){
               window.open("http://www.baidu.com");
           }
+
+      window.addEventListener('appinstalled', (evt) => {
+        console.log('a2hs installed');
+      });
+
+      window.addEventListener('beforeinstallprompt', function(e) {
+        console.log(e,"ss");
+        localStorage.removeItem('APP_INSTALLED')
+      })
   </script>
 </body>
 </html>
