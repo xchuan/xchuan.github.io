@@ -52,6 +52,7 @@
 
       window.addEventListener('appinstalled', (evt) => {
         console.log('a2hs installed');
+        localStorage.setItem('APP_INSTALLED',1);
       });
 
       window.addEventListener('beforeinstallprompt', function(e) {
