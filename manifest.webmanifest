@@ -58,5 +58,8 @@
       "type": "image/png",
       "purpose": "maskable any"
     }
+  ],
+  "related_applications":[
+    {"platform":"webapp","url":"https://xchuan.github.io/manifest.webmanifest"}
   ]
 }
