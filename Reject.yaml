@@ -4,6 +4,9 @@ payload:
   - DOMAIN-SUFFIX,a.ckm.iqiyi.com
   - DOMAIN-SUFFIX,ht-cdn2.adtng.com 
   - DOMAIN-SUFFIX,adtng.com
+  - DOMAIN-SUFFIX,flixdot.com
+  - DOMAIN-SUFFIX,gamingadult.com
+  - DOMAIN-SUFFIX,chaturbate.com
   - DOMAIN-SUFFIX,ad.m.iqiyi.com
   - DOMAIN-SUFFIX,afp.iqiyi.com
   - DOMAIN-SUFFIX,androidgo.duapp.com
